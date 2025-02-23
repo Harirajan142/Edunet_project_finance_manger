@@ -1,0 +1,225 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+button.toggle-button {
+  background: none;
+  border: none;
+  color: #4CAF50;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+button.toggle-button:hover {
+  text-decoration: underline;
+}
+
+.progress-container {
+  display: none;
+}
+
+.progress-bar {
+  display: none;
+}
+
+.progress-bar-income {
+  display: none;
+}
+
+.progress-bar-expense {
+  display: none;
+}
+
+.progress-percentage {
+  display: none;
+}
+
+.legend-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.legend-income {
+  background-color: #4CAF50;
+}
+
+.legend-expense {
+  background-color: #f44336;
+}
+
+.transaction-history {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  color: black;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.transaction-item:last-child {
+  margin-bottom: 0;
+}
+
+.transaction-description {
+  font-weight: bold;
+  flex: 1;
+}
+
+.transaction-amount {
+  font-size: 16px;
+  flex: 0 0 auto;
+}
+
+.transaction-income {
+  color: #4CAF50;
+}
+
+.transaction-expense {
+  color: #f44336;
+}
+
+.category-box {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  color: white;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.category-item:last-child {
+  border-bottom: none;
+}
+
+.category-name {
+  font-weight: bold;
+}
+
+.category-amount {
+  font-size: 16px;
+}
+
+.totals-container {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+}
+
+.total-income, .total-expenses, .percentage-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-buttons {
+  display: none;
+}
+
+.filter-button {
+  display: none;
+}
